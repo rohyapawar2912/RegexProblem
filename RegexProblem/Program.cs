@@ -11,16 +11,16 @@ namespace RegexProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your last name:");
-            string lastName = Console.ReadLine();
+            Console.WriteLine("Please enter your email address:");
+            string email = Console.ReadLine();
 
-            if (LastNameValidator.IsValidLastName(lastName))
+            if (EmailValidator.IsValidEmail(email))
             {
-                Console.WriteLine("Valid last name entered!");
+                Console.WriteLine("Valid email address entered!");
             }
             else
             {
-                Console.WriteLine("Invalid last name. It should start with a capital letter and have a minimum of 3 characters.");
+                Console.WriteLine("Invalid email address. The email should have 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with precise @ and . positions.");
             }
 
         }
