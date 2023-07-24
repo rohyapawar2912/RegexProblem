@@ -18,6 +18,12 @@ namespace RegexProblem
                 return false;
             }
 
+            // Rule2: Should have at least 1 Upper Case
+            if (!password.Any(char.IsUpper))
+            {
+                return false;
+            }
+
             // If all rules are passed, return true
             return true;
         }
