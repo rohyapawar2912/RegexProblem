@@ -20,7 +20,7 @@ namespace RegexProblem
             }
             else
             {
-                Console.WriteLine("Invalid password. The password must have a minimum of 8 characters and at least 1 upper case character.");
+                Console.WriteLine("Invalid password. The password must have a minimum of 8 characters, at least 1 upper case character, and at least 1 numeric number.");
             }
         }
     }

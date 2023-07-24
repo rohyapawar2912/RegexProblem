@@ -24,6 +24,12 @@ namespace RegexProblem
                 return false;
             }
 
+            // Rule3: Should have at least 1 numeric number
+            if (!password.Any(char.IsDigit))
+            {
+                return false;
+            }
+
             // If all rules are passed, return true
             return true;
         }
