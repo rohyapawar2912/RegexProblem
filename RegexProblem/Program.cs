@@ -11,16 +11,16 @@ namespace RegexProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your first name:");
-            string firstName = Console.ReadLine();
+            Console.WriteLine("Please enter your last name:");
+            string lastName = Console.ReadLine();
 
-            if (FristNameValidator.IsValidFirstName(firstName))
+            if (LastNameValidator.IsValidLastName(lastName))
             {
-                Console.WriteLine("Valid first name entered!");
+                Console.WriteLine("Valid last name entered!");
             }
             else
             {
-                Console.WriteLine("Invalid first name. It should start with a capital letter and have a minimum of 3 characters.");
+                Console.WriteLine("Invalid last name. It should start with a capital letter and have a minimum of 3 characters.");
             }
 
         }
