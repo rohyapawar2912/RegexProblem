@@ -11,16 +11,16 @@ namespace RegexProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your mobile number (e.g., 91 9919819801):");
-            string mobileNumber = Console.ReadLine();
+            Console.WriteLine("Please enter your password:");
+            string password = Console.ReadLine();
 
-            if (MobileNumberValidator.IsValidMobileNumber(mobileNumber))
+            if (PasswordValidator.IsValidPassword(password))
             {
-                Console.WriteLine("Valid mobile number entered!");
+                Console.WriteLine("Valid password!");
             }
             else
             {
-                Console.WriteLine("Invalid mobile number. The mobile number should follow the format: 91 <10 digit number>.");
+                Console.WriteLine("Invalid password. The password must have a minimum of 8 characters.");
             }
         }
     }
