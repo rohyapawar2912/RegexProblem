@@ -11,18 +11,17 @@ namespace RegexProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your email address:");
-            string email = Console.ReadLine();
+            Console.WriteLine("Please enter your mobile number (e.g., 91 9919819801):");
+            string mobileNumber = Console.ReadLine();
 
-            if (EmailValidator.IsValidEmail(email))
+            if (MobileNumberValidator.IsValidMobileNumber(mobileNumber))
             {
-                Console.WriteLine("Valid email address entered!");
+                Console.WriteLine("Valid mobile number entered!");
             }
             else
             {
-                Console.WriteLine("Invalid email address. The email should have 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with precise @ and . positions.");
+                Console.WriteLine("Invalid mobile number. The mobile number should follow the format: 91 <10 digit number>.");
             }
-
         }
     }
 }
